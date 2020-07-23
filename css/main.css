@@ -3,11 +3,6 @@
 body{
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 a{
@@ -17,6 +12,11 @@ a{
 }
 
 .home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-image: url("/assets/img/Cover.png");
     background-position: top;
     background-repeat: no-repeat;
@@ -98,4 +98,76 @@ nav .profile-link a{
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+.blogs-main-image-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 40px;
+}
+
+.blogs-featured-section{
+    height: 500px;
+    background-color: #E5E8ED;
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+.blogs-main-image-container img{
+    height: 90%;
+    width: 90%;
+}
+
+.blogs-main-post-description{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.blogs-main-post-description button{
+    border: 2px solid #00ddad;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.blogs-lastest-posts h2{
+    text-align: center;
+}
+
+.blogs-posts-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.blogs-posts-container .post-card{
+    width: 300px;
+    margin: 10px;
+}
+.post-card img{
+    width: 300px;
+    height: 176px;
+}
+.post-card .card-title{
+    font-size: 24px;
+}
+.post-card button{
+    background-color: transparent;
+    border: 2px solid #00ddad;
+    padding: 15px;
+    cursor: pointer;
+}
+footer .footer-color-bar{
+    margin-top: 30px;
+    height: 30px;
+    background-color: #00ddad;
+}
+footer .footer-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #23282d;
+    color: white;
 }
